@@ -7,5 +7,16 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../JCodeOdor-Launcher-1.0-standalone.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../JCodeOdor-Launcher-1.0-standalone.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

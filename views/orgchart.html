@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh diagram organisasi</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/organization-chart.css">
+</head>
+<body>
+	
+	   <div id="chart-container"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	  <script type="text/javascript" src="../assets/js/jquery.orgchart.min.js"></script>
+	  <script type="text/javascript">
+	    $(function() {
+
+	    var datasource = {
+	      'name': 'Rian',
+	      'title': 'Kepala Bidang Kepegawaian',
+	      'children': [
+	        { 'name': 'Rian', 'title': 'Kepala Bidang Kepegawaian' },
+	        { 'name': 'Rian', 'title': 'Kepala Bidang Kepegawaian',
+	          'children': [
+	            { 'name': 'Rian', 'title': 'Kepala Bidang Kepegawaian' },
+	            { 'name': 'Rian', 'title': 'Kepala Bidang Kepegawaian',
+	              'children': [
+	                { 'name': 'Rian', 'title': 'engineer' }
+	              ]
+	            },
+	            { 'name': 'Rian', 'title': 'Kepala Bidang Kepegawaian' }
+	          ]
+	        },
+	        { 'name': 'Rian', 'title': 'Kepala Bidang Kepegawaian' }
+	      ]
+	    };
+
+	    $('#chart-container').orgchart({
+	      'data' : datasource,
+	      'nodeContent': 'title'
+	    });
+
+	  });
+	  </script>
+
+</body>
+</html>
